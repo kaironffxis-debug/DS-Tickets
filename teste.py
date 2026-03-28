@@ -16,6 +16,7 @@ ALLOWED_USER_IDS = set(
     int(x.strip()) for x in os.getenv('ALLOWED_USER_IDS', '1337497318513053726') .split(',') if x.strip()
 )
 
+intents = discord.Intents.default()
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 
