@@ -17,7 +17,7 @@ ALLOWED_USER_IDS = set(
 )
 
 intents = discord.Intents.default()
-bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 
 def is_authorized(user_id: int) -> bool:
